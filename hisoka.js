@@ -2683,7 +2683,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                                 }
                             }]
                         hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
-             
+             const devsound = fs.readFileSync('./lib/sik.mp3')
+           hisoka.sendMessage(m.chat, { audio: devsound, mimetype: 'audio/mp4', ptt: true, quoted: m })
              
 		    
 		 
