@@ -2618,11 +2618,21 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             }
             break
+			
             case 'owner': case 'creator': {
                 hisoka.sendContact(m.chat, global.owner, m)
             const devsound = fs.readFileSync('./lib/sik.mp3')
            hisoka.sendMessage(m.chat, { audio: devsound, mimetype: 'audio/mp4', ptt: true, quoted: m })
+	    }
+		    break
+		    
+		    
+		    case 'gagana': case 'dilshan' : case 'patiyo' : {
+               
+            const devsound = fs.readFileSync('./lib/VoiceClip_hi.mp3')
+           hisoka.sendMessage(m.chat, { audio: devsound, mimetype: 'audio/mp4', ptt: true, quoted: m })
            }
+	
            
            case 'gota': case 'mahinda' : case 'rajapakshe' : {
                
@@ -2674,9 +2684,9 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             }]
                         hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
              
-             const devsound = fs.readFileSync('./lib/sik.mp3')
-           hisoka.sendMessage(m.chat, { audio: devsound, mimetype: 'audio/mp4', ptt: true, quoted: m })
-         
+             
+		    
+		 
          
                    }
             
@@ -2717,7 +2727,10 @@ let btn = [{
                           
             
             hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
-                     }
+               const devsound = fs.readFileSync('./lib/sik.mp3')
+           hisoka.sendMessage(m.chat, { audio: devsound, mimetype: 'audio/mp4', ptt: true, quoted: m })
+	    
+	    }
             
            
             break
