@@ -18,11 +18,11 @@ global.APIKeys = {
 }
 
 // Other
-global.owner =  ['94778115292','94777611095','94702978512']
-global.premium = ['94778115292']
-global.packname = 'JF_BOT'
-global.author = 'Jayarathne'
-global.sessionName = 'Jayarathne'
+global.owner =  ['94768012324','94703515017']
+global.premium = ['94768012324']
+global.packname = 'ALPHA_BOT'
+global.author = 'ALPHA TEAM'
+global.sessionName = 'ALPHA TEAM'
 global.prefa = ['','!','.','#','sik','$']
 global.sp = '🍂'
 global.mess = {
